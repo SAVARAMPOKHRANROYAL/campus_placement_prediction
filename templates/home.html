@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<TITLE>
+    AIR POLLUTION PREDICTION
+</TITLE>
+<head fontface="algerian">
+<H1>
+<CENTER><i> Predictive analysis</i></CENTER>
+</H1>
+<style>
+ body{background-image: url("static/t.avif");
+ background-repeat: no-repeat;
+ background-size: 100%;}
+</style>
+</head>
+<body   >
+    <form  action='/predict' method="POST">
+        <center>
+        <TABLE BORDER="0">
+        <tr>
+            <td>Gender:</td>
+            <td>
+            <select name="gender"  required="required">
+            <optgroup label="Gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+            </optgroup>
+        <br></td></tr><br>
+        <tr><td>Secondary Education percentage:</td><td><input type="text" name='ssc_p' placeholder="Enter 0% - 100%"></td></tr><br>
+        <tr><td>Board of Education:</td>
+            <td>
+            <select name="ssc_b"  required="required">
+            <option value="0">Central</option>
+            <option value="1">Others</option></td></tr>
+        <tr><td>Higher Secondary Education percentage- 12th Grade:</td><td><input type="text" name='hsc_p' placeholder="Enter 0% - 100%"></td></tr>
+        <tr><td>Board of Education:</td>
+            <td>
+            <select name="hsc_b"  required="required">
+            <option value="0">Central</option>
+            <option value="1">Others</option></td></tr>
+        <tr><td>Specialization in Higher Secondary Education:</td>
+            <td><select name="hsc_s"  required="required">
+            <option value="1">Commerce</option>
+            <option value="2">Science</option>
+            <option value="0">Arts</option></td></tr>
+        <tr><td>Degree Percentage:</td><td><input type="text" name='degree_p' placeholder="Enter 1% - 100%"></td></tr>
+        <tr><td>Under Graduation(Degree type):</td>
+            <td><select name="degree_t"  required="required">
+            <option value="0">Comm&Mgmt</option>
+            <option value="2">Sci&Tech</option>
+            <option value="1">Others</option></td></tr>
+        <tr><td>Work Experience:</td>
+            <td><select name="workex"  required="required">
+            <option value="1">Yes</option>
+            <option value="0">No</option></td></tr>
+        <tr><td>Employability test percentage :</td><td><input type="text" name='etest_p' placeholder="Enter 1% - 100%"></td></tr>
+        <tr><td>Post Graduation(MBA):</td>
+            <td><select name="specialisation"  required="required">
+            <option value="0">Mkt&Fin</option>
+            <option value="1">Mkt&HR</option></td></tr>
+        <tr><td>MBA percentage:</td><td><input type="text" name='mba_p' placeholder="Enter 0% - 100%"></td></tr>
+        </table><br>
+        <input type="submit"  value="predict">
+        </form>
+    </center>
+    </body>
+</html>
